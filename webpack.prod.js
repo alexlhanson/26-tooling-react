@@ -7,13 +7,13 @@ const webpackProdConfig = {};
 webpackProdConfig.module = {};
 webpackProdConfig.mode = 'production';
 
-webpackDevConfig.plugins = [
+webpackProdConfig.plugins = [
   new MiniCssPlugin({
     filename: '[name].[hash].css'
   })
 ];
 
-webpackDevConfig.module.rules = [
+webpackProdConfig.module.rules = [
   {
     test: /\.scss$/,
     use: [
