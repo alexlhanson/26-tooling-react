@@ -2,7 +2,7 @@
   "name": "react-counter",
   "version": "1.0.0",
   "description": "Make a counter in react js",
-  "main": "main.js",
+  "main": "./src/main.js",
   "scripts": {
     "test": "jest",
     "watch": "webpack-dev-server --config webpack.dev.js",

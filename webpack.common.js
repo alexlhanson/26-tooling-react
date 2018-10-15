@@ -16,7 +16,7 @@ webpackConfig.output = {
 webpackConfig.plugins = [
   new HtmlWebpackPlugin({
     title: 'React App',
-    template: `${__dirname}/src/indexedDB.html`,
+    template: `${__dirname}/src/index.html`,
   }),
 
   new DefinePlugin({
@@ -41,7 +41,7 @@ webpackConfig.module.rules = [
       options: {
         presets: ['env', 'stage-0', 'react'],
         plugins: ['transform-react-jsx-source'],
-        cacheDirector: true,
+        cacheDirectory: true,
       },
     },
   },
