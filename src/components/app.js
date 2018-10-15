@@ -5,7 +5,6 @@ import {say} from 'cowsay';
 import Faker from 'faker';
 
 import '../style/app.scss';
-console.log(say({text:'hi there'}));
 class App extends React.Component{
 
   constructor(props){
@@ -20,7 +19,6 @@ class App extends React.Component{
 
   updateState () {
     let fakeText = Faker.fake("{{lorem.paragraph}}");
-    console.log(fakeText);
     let value = say({
       text: fakeText,
     });
